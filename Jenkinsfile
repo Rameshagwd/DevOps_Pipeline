@@ -36,6 +36,11 @@ pipeline {
                 sh 'mvn validate'
             }
         }
+        stage ('MVN Deploy') {
+            steps {
+                sh 'mvn deploy'
+            }
+        }
     }
     
 }
