@@ -8,32 +8,32 @@ pipeline {
         }
         stage ('MVN Clean') {
             steps {
-                sh 'mnv clean'
+                sh 'mvn clean'
             }
         }
         stage ('MVN Compile') {
             steps {
-                sh 'mnv compile'
+                sh 'mvn compile'
             }
         }
         stage ('MVN Install') {
             steps {
-                sh 'mnv install'
+                sh 'mvn install'
             }
         }
         stage ('MVN test') {
             steps {
-                sh 'mnv test'
+                sh 'mvn test'
             }
         }
         stage ('MVN package') {
             steps {
-                sh 'mnv package'
+                sh 'mvn package'
             }
         }
         stage ('MVN Validate') {
             steps {
-                sh 'mnv validate'
+                sh 'mvn validate'
             }
         }
     }
